@@ -24,6 +24,6 @@ app.use('/api/auth', auth)
 const port = process.env.PORT || 3030
 const ip = 'localhost'
 
-app.listen(port, ip, () => {
+app.listen(port, () => {
   console.log(`Listening to ${ip}:${port}`)
 })
