@@ -8,7 +8,7 @@ import { users } from './routes/users.js'
 import { auth } from './routes/auth.js'
 
 mongoose
-  .connect('mongodb://localhost/vidly')
+  .connect('mongodb+srv://knightpavan75:PaVaN12345@cluster0.l43ftrh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('connected to mongodb'))
   .catch(err => console.log('cannot connect to mongodb'))
 
