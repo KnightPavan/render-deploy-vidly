@@ -10,7 +10,7 @@ import { auth } from './routes/auth.js'
 mongoose
   .connect('mongodb+srv://knightpavan75:PaVaN12345@cluster0.l43ftrh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('connected to mongodb'))
-  .catch(err => console.log('cannot connect to mongodb'))
+  .catch(err => console.log(err))
 
 const app = express()
 app.use(express.json())
